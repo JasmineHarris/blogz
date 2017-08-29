@@ -1,17 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <nav>
-        <a href='/'>Main Key Blog Page!</a> |
-        <a href='newpost'>Anothah Post!</a>    
-        </nav>
-        <link type="text/css" rel="stylesheet" href="css\djkahled.css"/>
-        <title>{{title}}</title>
-    </head>
+<head>
+    <title>Build A Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/djkahled.css">
+</head>
 <body>
 
-    {% block content %}
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Main</a></li>
+                <li><a href="/newpost">Speak Yo Heart Here</a></li>
+                <li><a href="/signup">Signup</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/logout">Logout</a></li>
+                </ul>
+        </nav>
+    </header>
 
+    {% block content %}
     {% endblock %}
 
 </body>
